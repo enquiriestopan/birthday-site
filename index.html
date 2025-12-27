@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday ❤️</title>
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --sage: #cfe3d8;
+      --emerald: #1f6f5c;
+      --pastel: #eaf5ef;
+      --glow: rgba(31, 111, 92, 0.25);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(180deg, var(--pastel), var(--sage));
+      color: #1a1a1a;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+      text-transform: capitalize;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 80px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1s ease;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .hero {
+      position: relative;
+      background: radial-gradient(circle at top, #ffffff, var(--sage));
+      overflow: hidden;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      margin-bottom: 10px;
+    }
+
+    .hero h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3rem, 6vw, 5rem);
+      color: var(--emerald);
+      text-shadow: 0 0 20px var(--glow);
+    }
+
+    .heart {
+      position: absolute;
+      bottom: -20px;
+      color: rgba(31, 111, 92, 0.3); /* green hearts */
+      font-size: 20px;
+      animation: floatUp 10s linear infinite;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0) scale(1); opacity: 0; }
+      10% { opacity: 1; }
+      100% { transform: translateY(-120vh) scale(1.5); opacity: 0; }
+    }
+
+    .message {
+      max-width: 700px;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .message p {
+      opacity: 0;
+      animation: lineFade 1s ease forwards;
+    }
+
+    .message p:nth-child(1) { animation-delay: 0.5s; }
+    .message p:nth-child(2) { animation-delay: 1.5s; }
+    .message p:nth-child(3) { animation-delay: 2.5s; }
+
+    @keyframes lineFade {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .memories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .memory-card {
+      background: rgba(255,255,255,0.7);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .memory-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    }
+
+    .memory-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .memory-card p {
+      padding: 15px;
+      font-size: 0.9rem;
+    }
+
+    .final h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3rem, 6vw, 5rem);
+      color: var(--emerald);
+      text-shadow: 0 0 25px var(--glow);
+    }
+
+    .pulse-heart {
+      font-size: 3rem;
+      animation: pulse 2s infinite;
+      margin-top: 20px;
+      color: var(--emerald);
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    .music-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--emerald);
+      color: white;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+      z-index: 1000;
+    }
+
+    .music-btn:hover { transform: scale(1.05); }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="reveal">
+      <h1>Happy Birthday ❤️</h1>
+      <h2>Evita</h2>
+    </div>
+  </section>
+
+  <section>
+    <div class="message reveal">
+      <p>EVITAAAAA YOURE FINALLY 15 OMG!!! HAPPY BIRTHDAY AND MAY GOD BLESS YOU SO ABUNDANTLY OMG</p>
+      <p>ykw since you made me something really sweet for my birthday im making you one for yours so get ready to cry ;)</p>
+      <p>evita ever since i met you i had this feeling that we've known eachother for so long
+not even my hbs have been this close to me</p>
+      <p>evita in these 4 months that ive known you ive realized that youre the only person that has treated me this good. youre literally one in a trillion bro like you js have the most sweetest and purest soul out of anyone ive ever met.</p>
+      <p>forgive me if i dont sound that sweet here its js that as usual im a really bad replier</p>
+      <p> you made me realize that i have value. ive come to you countless times crying and youve always left me laughing at the end of the convo and i cant thank you enough for that.</p>
+      <p>i js really wish i was there when you felt down. i may not give you the best responses.. but js know that i care and love for you so come to me when everything feels heavy.</p>
+      <p>so evita i really hope you have THE best birthday youve ever had. thank you for being here, thank you for existing ;-;</p>
+      <p>i never thought id have anyone like you in my life. you make me feel seen.</p>
+      <p> as usual i dont know what to say cuz im really bad at shit like this so PLEASE KNOW I PUT ALOT OF EFFORT INTO THIS</p>
+      <p>sadly i need to stop here because i might make a big ine</p>
+      <p>HAVE A REALLY GOOD BIRTHDAY OKAY????? THANKYOUUUUU BAIAIIAIAIAIAIAIAIAIAIA</p> 
+
+    </div>
+  </section>
+
+  <section>
+    <div class="memories reveal">
+      <div class="memory-card">
+        <img src="yep.png" alt="">
+        <p>hey thats WOAH YOURE FLOATING</p>
+      </div>
+      <div class="memory-card">
+        <img src="yeah.png" alt="">
+        <p>LMAOOOOOO LOOK AT YOU</p>
+      </div>
+      <div class="memory-card">
+        <img src="us.jpeg" alt="">
+        <p>TOH!!!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="reveal">
+      <h1>Happy birthday :D</h1>
+      <div class="pulse-heart">💚</div>
+    </div>
+  </section>
+
+  <audio id="bgMusic" src="The Neighbourhood - Sweater Weather (Lyrics) - 7clouds Chill.mp3" loop muted></audio>
+  <button class="music-btn" id="musicToggle">Tap To Play Music</button>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    window.addEventListener('scroll', () => {
+      reveals.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+          el.classList.add('active');
+        }
+      });
+    });
+
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.innerHTML = '💚';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = (8 + Math.random() * 5) + 's';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 12000);
+    }
+    setInterval(createHeart, 800);
+
+    const music = document.getElementById('bgMusic');
+    const btn = document.getElementById('musicToggle');
+    let playing = false;
+    btn.addEventListener('click', () => {
+      if (!playing) {
+        music.muted = false;
+        music.play();
+        btn.textContent = 'Pause Music';
+      } else {
+        music.pause();
+        btn.textContent = 'Play Music';
+      }
+      playing = !playing;
+    });
+  </script>
+
+</body>
+</html>
